@@ -1,298 +1,249 @@
 @import url('https://fonts.googleapis.com/css?family=Lato:300|Oswald');
 
 *{
-  margin: 0;
-  padding:0;
-  border:0;
+    margin:0;
+    padding:0;
+    border:0;
 }
 
-
-body {
-  font-family: Lato;
-  color:#777777; /* Light grey. For body text. */
+body{
+    font-family: Lato;
+    color:#777777;
 }
-
 
 h2{
-  font-family: Oswald;
-  text-transform: uppercase; /*Make letters uppercase */
-  letter-spacing: 4px; /* Some letter spacing */
-  color:#555555; /* Color the logo */ 
+    font-family: Oswald;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    color:#555555;
 }
 
 #logo{
-  float: left;
-  font-size:280%; /* % so that it will resize with device */
-  margin-left:30px;
+    float: left; 
+    font-size: 280%;
+    margin-left: 30px;
 }
-
+ 
 #menu{
-  font-size: 110%;
-  list-style-type: none;/*remove bullets*/
-  letter-spacing: 4px;
+    font-size: 110%;
+    list-style-type: none;
+    letter-spacing: 4px;
 }
 
-#logo, #menu {
-  line-height: 75px;
+
+#logo, #menu{
+    line-height: 75px;
 }
 
 #menu li {
-  float:right;/* List items float to right */
-  margin-right: 30px;
+    float: right;
+    margin-right: 30px;
 }
 
 #menu a {
-  text-decoration: none;/* remove underlines */
-  color:inherit;/* Inherts color from closest parent that has color set */
+    text-decoration: none;
+    color: inherit;
 }
 
-/*Pesudo class that shows a line when we hover over the links in the menu */
 #menu a:hover {
-  border-bottom: 1px solid #777777;
+    border-bottom: 1px solid #777777;
 }
 
-/*Underline to show we are on the home page */
-.active {
-  border-bottom: 1px solid #777777;
+.active{
+     border-bottom: 1px solid #777777;
 }
 
 #hero-image{
-  height: 600px;
-  width:100%;
-  background: url("http://codeinstitute.s3.amazonaws.com/FundamentalsProjects/HTML-CSS/main-image.png")no-repeat center center;
-
-animation-name: hero-zoom;
-animation-duration: 5s;
-animation-fill-mode: forwards;
-
+    height:600px;
+    width: 100%;
+    background: url("http://codeinstitute.s3.amazonaws.com/FundamentalsProjects/HTML-CSS/main-image.png") no-repeat center center;
+  
+    animation-name: hero-zoom;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
 
 }
 
-/*This is to stop the image overflowing in to the header */
 #hero-outer{
-  height: 600px;
-  width: 100%;
-  overflow: hidden;
-  position: relative;
+    height:600px;
+    width: 100%;
+    overflow:hidden;
+    position: relative;
 }
 
-/*Animation for main image */
 @keyframes hero-zoom {
-  from {
-    transform: scale(1);
-  }
-  to {
-    transform: scale(1.1);
-  }
+    from{
+        transform: scale(1);
+    }
+    to{
+        transform: scale(1.1);
+    }
 }
 
-#cover-text, #cover-text h2{
-  color:#ffffff;
+#cover-text, #cover-text h2 {
+    color: #ffffff;
 }
 
 #cover-text {
-  font-size: 130%;
-  font-family: Oswald;
-  text-transform: uppercase;
-  letter-spacing: 4px;
+    font-size: 130%;
+    font-family: Oswald;
+    text-transform: uppercase;
+    letter-spacing: 4px;
 
-  width: 300px;
-  height: 200px;
+    width: 300px;
+    height: 200px;
 
-  padding-top: 40px;
-  padding-left: 10px;
+    padding-top: 40px;
+    padding-left: 10px;
 
-  background-color: rgba(241, 109, 107, .7);
+    background-color: rgba(241, 109, 107, .7);
 
-  bottom:30px;
-  right: 150px;
+    bottom:30px;
+    right: 120px;
 
-  position: absolute;
+    position: absolute;
+
 }
 
 #club-ethos{
-  height:600px; /* Same as hero image */
+    height: 600px;
 }
 
 #left-about{
-  padding-top: 30px;
-  width:33%;
-  float:left;
-
- /*  background-color: red; Good idea to put a color temp so you can see what it looks like */ 
+    padding-top: 30px;
+    width: 33%;
+    float: left;
 }
 
+
 #right-about{
-  padding-top: 30px;
-  width:33%;
-  float:right;
-   /* background-color: blueviolet*/
+    padding-top: 30px;
+    width:33%;
+    float: right;
 }
 
 #center-about{
-  width: 33%;
-  margin: 0 auto;
-  /* background-color: yellow; */
+    width: 33%;
+    margin:0 auto;
 }
 
-hr {
-  border-top: 1px solid #777777;
-  width: 100%;
-  margin: 5px 0;
+hr{
+    border-top: 1px solid #777777;
+    width: 100%;
+    margin: 5px 0;
+    
 }
 
-.left-about-heading {
-  width: 50%;
-  float: right; /*We want our content to align with the photo in the middle, so we float right.*/
-
-  line-height: 20px; /*we want the paragraph text to be easily read. So we set the line-height to 20px.*/
-
-  clear:both;/*By setting clear: both we ensure that each content block is aligned vertically*/
-
-  margin-bottom: 50px; /*We create some breathing space between the divs by setting the margin-bottom to 50px.*/
+.left-about-heading{
+    width: 50%;
+    float: right;
+    line-height: 20px;
+    clear: both;
+    margin-bottom: 50px;
 }
 
-.right-about-heading {
-  width: 50%;/*That is, 50% of the parent div with a class right-header which is 33% of the entire screen width.*/
-
-  float:left; /*Because our content now will be on the right-hand side of the circular image we want the content to sit beside the image.
-So we'll float it to the left.*/
-
-line-height: 20px;
-
-clear: both; /*Setting clear : both again makes sure that both the upper and lower right-hand side content blocks align themselves vertically within the parent div. */
-
-margin-bottom: 50px; /*Set the margin-bottom to 50px in order to provide enough vertical space between the upper and lower content blocks.*/ 
+.right-about-heading{
+    width:50%;
+    float:left;
+    line-height: 20px;
+    clear: both;
+    margin-bottom: 50px;
 }
-
-/*Next, we'll style the right-hand-side content blocks headers. we align the text to the right, so the content for both the left-hand side and right-hand
-side will give the impression of a curve around the center image once it's in place*/
 
 .right-about-heading h2{
-  text-align: right;
+    text-align: right;
 }
 
-.right-about-heading p{
-  text-align: right;
+
+.right-about-heading p {
+    text-align: right;
 }
 
-/*Text for center */
+
 #welcome{
-  margin:20px 0; /* Push down from hero image */
-  text-align: center;
-  font-size: 280%;
+    margin: 20px 0;
+    text-align: center;
+    font-size: 280%;
 }
 
-/*Circle for center image */
 #circle-container{
-  width:300px;
-  height: 300px;
-  padding:30px;
-  border-style: solid;
-  border-color: #cccccc; /*Light grey*/
-  border-width: 1px;
-  border-radius: 50%;
-  margin:0 auto; /*Center the image */
+    width: 300px;
+    height: 300px;
+    padding:30px;
+    border-style: solid;
+    border-color:#cccccc;
+    border-width: 1px;
+    border-radius: 50%;
+    margin:0 auto;
+
 }
-
-
-/* Center image */
+ 
 #circle-cover-bg{
-  background: url('http://codeinstitute.s3.amazonaws.com/FundamentalsProjects/HTML-CSS/video-mask.png')no-repeat center center;
-  height: 100%;
-  border-radius: 50%;
+    background: url("http://codeinstitute.s3.amazonaws.com/FundamentalsProjects/HTML-CSS/video-mask.png") no-repeat center center;
+    height:100%;
+    border-radius: 50%;
 }
-
-/* Bg for 'times' section */
 
 #times{
-  background-image: url('http://codeinstitute.s3.amazonaws.com/FundamentalsProjects/HTML-CSS/dublin-city.png');
+    background-image: url("http://codeinstitute.s3.amazonaws.com/FundamentalsProjects/HTML-CSS/dublin-city.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    overflow: hidden;
 
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  width:100%;
-  overflow: hidden;/*hide any potential image overflow.*/
 }
 
-/* Panels for times */
 #times div{
-  color:#fafafa; /*Off white */
-  background-color: rgba(0,0,0, 0.6);
-  width: 19%;
-  height:300px;
-  /*we then set the panels to float left so that they display horizontally within the flow of the page.*/
-  float:left;
+   color: #fafafa;
+   background-color: rgba(0,0,0, .6);
+   width: 19%;
+   height: 300px;
+   float: left;
+   padding: 30px 0 0 10px;
+   text-align: center;
+   margin: 2px;
 
-  /*Let’s set some padding for the panels. 30px for the top and 10px for the left.*/
-  padding:30px 0 0 10px;
-  text-align: center;
-
-  /*Then we create some breathing space between the panels by setting the margin. Let’s try 4px. */
-  margin: 1px;
-}
-
-/* Color the times headings/icons */
-#times h2 {
-  color:#fafafa;
-}
-
-/*footer */
-footer {
-  
- /* we’ll give a height of 150px to maintain the structural balance across the site. */
-  height: 150px;
 }
 
 
-.social-networks {
-  text-align: center;
+#times h2{
+    color:#fafafa;
+}
+
+footer{
+    height: 150px;
+}
+
+.social-networks{
+    text-align: center;
 }
 
 .social-networks li {
-  /*We need to target the list items and align them horizontally. And to do that we can set the display to inline*/
-  display: inline;
+    display:inline;
 }
 
-/* We drill down to target and style the icons. */
 .social-networks i {
-  font-size: 160%; /*We increase the font-size for all icons to 160%, to make them stand out in the footer area. */ 
-  
-  /*We assign some margins and padding to separate the icons.*/
-  margin:1%;
-  padding: 5%;
-
-  /*we apply the hex color value of #777777 to be consistent with other text.*/
-  color: #777777;
+    font-size: 160%;
+    margin: 1%;
+    padding: 5%;
+    color: #777777;
 }
 
 
-/* gallery */ 
 #photo {
-  /* Set clear:both = We do this so the photo section and its contents display below the header.*/
-  clear:both;
-
-  /* Next, we set the line height to zero in order to remove any horizontal gaps between the images*/
-line-height: 0;
-
-/*After that, we add the secret sauce, which is the column-count.
-We set this to 4. If you don’t have enough images on display to justify 4 columns you can specify 3 or 2 columns.*/
-column-count: 3;
-
-/* Let’s get rid of the vertical gaps by setting the column-gap to 0px. This is a personal preference, you might choose otherwise. */
-column-gap: 0px;
-
+    clear: both;
+    line-height: 0;
+    column-count: 4;
+    column-gap: 0px;
 }
 
-/* Ok, the gaps between the images are gone, but the image sizing is still not right.
-Some are too big for a column. Some are too small.
-We fix this by targeting the images within the photo section. We set the width for all the gallery images to 100%.*/
-#photo img {
-  width: 100%;
+#photo img{
+    width: 100%;
 }
 
 
-* form */
+/* form */
 
 .form-section {
     clear: left;
@@ -345,117 +296,117 @@ We fix this by targeting the images within the photo section. We set the width f
 .join-button:hover{
   background-color: #fafafa;
   color: #f16c6b;
+}
 /*end form*/
 
 
-@media screen and (max-width: 1393px){
-   #club-ethos {
-    width: 65%;
-    height: 1200px;
-    margin: 0 auto;
+
+@media screen and (max-width: 1393px) {
+
+    #club-ethos {
+        width: 65%;
+        height: 1100px;
+        margin: 0 auto; 
+    }
+    
+    #welcome {
+        padding: 30px 0;
+        margin-top: 0;
+    }
+    
+    #left-about, #right-about{
+        width: 100%;
+        float: left;
+        padding: 0;
+    }
+    
+    
+    #center-about {
+        clear: both;
+        width: 100%;
+        float: left;
+        padding: 0;
+    }
+    
+    #times div{
+        width: 100%;
+        clear: both;
+        height: 150px;
+        border-style: solid;
+        border-bottom-width: 1px;
+        border-bottom-color: #fff;
+        padding: 0;
+    }
+
+    hr {
+        display: none;
+    }
+    
+}
+
+@media screen and (max-width: 943px) {
+    
+    #menu {
+        clear: left;
+        float: left;
+        margin-left: 30px;
+        margin-bottom: 20px;
+        line-height: 25px;
+    }
+
+    #cover-image {
+        height: 500px;
+        background-size: cover;
+        background-position: center;
+        background: url(../img/form-bg.png) no-repeat;
+
+    }
+
+    #cover-text {
+        left: 0px;
+    }
+    
+    #club-ethos {
+        width: 90%;
+        height: 1200px;
+        margin: 0 auto; 
+    }
+
+  
+    .left-about-heading,
+    .right-about-heading {
+        width: inherit;
+    }
+    
+    .right-about-heading h2,
+    .left-about-heading h2 {
+        width: 100%;
+        text-align: center;
+
+    }
+
+    .right-about-heading p,
+    .left-about-heading p {
+        text-align: center;
+        padding: 0 20 0 20;
+    }
+    
+    #photo{
+        column-count:3;
+    }
+    
+    
+    #form-container {
+        left:0;
+    }
+    
+}
+
+  @media screen and (max-width: 800px) {
+    #photo {
+     column-count:2;
+    }
   }
-
-  #welcome{
-    padding:30px;
-    margin:0;
-  }
-
-   #left-about,#right-about {
-    width:100%;
-    float:left;
-   }
-
-   #center-about{
-     clear: both;
-     width:100%;
-     float:left;
-     padding:0;
-   }
-
-  #times div {
-    width:100%;
-    clear:both;
-    height:150%;
-    border-style:solid;
-    border-bottom-width:1px;
-    border-bottom-color:#fff;
-
-    /*Notice we use only 3 hex values.
-You can do this for less subtle color shades that involve more simple combinations of red, green and blue values. */
-
-/* We also set the padding to 0 to clear out any unwanted desktop-level padding.*/
-padding:0;
-
-  }
-
-   hr{
-     display:none;
-   }
-}
-
-
-@media screen and(max-width:943px){
-
-  /*We want to push our navigation items below and left of our logo. So we set the clear and float properties to "left". We want some breathing space between the navigation elements and the left edge of the screen, so we set margin-left to 30px.We set the margin-bottom to 20px
-and set the line-height to 25px to provide a balanced space between the logo above and the main image below. */
-
-#menu {
-  clear:left;
-  float:left;
-  margin-left:20px;
-  margin-bottom:20px;
-  line-height: 25px;
-}
-
-#cover-text{
-  left:0px;
-}
-
-#club-ethos{
-  width:90%;
-  height:1200px;
-  margin:0 auto;
-}
-
-.left-about-heading, .right-about-heading {
-  width:inherit;
-}
-
-.left-about-heading h2, .right-about-heading h2{
-  width:100%;
-  text-align:center;
-}
-
-
-.left-about-heading p, .right-about-heading p{
-   text-align:center;
-   padding: 0 auto;
-}
-
-
-#photo{
-  column-count: 3;
-}
-
-}
-
-@media screen and (max-width: 800px){
-
-  #photo{
-    column-count: 2;
-  }
-}
-
-
-
-
-
-
-
-
-
-
-
 
 
 
